@@ -28,6 +28,14 @@
         </ul>
     </div>
 
+    {% for post in posts %}
+    <div>
+        <p> publicado: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+
 </body>
 
 </html>
